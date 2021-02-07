@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Derrick's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body>
+        <!--Side navigation-->
+        <div id="sideNav">
+            <i class="far fa-times-circle" onclick="closeNav()"></i>
+            <a href="#home" onclick="closeNav()">Home</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#expert" onclick="closeNav()">Skills</a>
+            <a href="#offer" onclick="closeNav()">Works</a>
+            <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+        <nav id="topBar">
+            <!--Hamburger Menu Left, fontawesome-->
+            <!--My name 'Derrick' to the Right-->
+            <i id="hamburgerMenu" class="fas fa-bars" onclick="openNav()"></i>
+            <span>Derrick</span>
+        </nav>
+        <section id="home" class="pageSection">
+            <section id="who" class="division">
+                <img src="assets/test-image.jpg" height="300" width="300" alt="portait image of myself">
+                <p>Derrick Thornton</p>
+                <p>Web Developer</p>
+            </section>
+            <section id="mediaLinks" class="division">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-discord"></i>
+            </section>
+            <section id="resumeSection" class="division">
+                <a href="#home" download><button type="submit" id="downloadResume">Download Resume</button></a>
+            </section>
+        </section>
+        <section id="about" class="pageSection">
+            <section class="intro">
+                <p>My Intro</p>
+                <p>About Me</p>
+                <p>
+                    Hi, I'm a web developer who is very passionate about planning and constructing web applications and website interfaces. I've been in this work for quite a few years, and am confident that I can help with your project.
+                </p>
+                <img src="assets/test-image.jpg" height="300" width="300" alt="second portait image of myself">
+            </section>
+            <section id="introBullets">
+                <p class="standOut">Information</p>
+                <div>
+                    <p><i class="fas fa-user-alt"></i>Derrick Thornton</p>
+                    <p><i class="fas fa-envelope-square"></i>derrickethornton@protonmail.com</p>
+                </div>
+                <p class="standOut">Experience and Support</p>
+                <div>
+                    <p><i class="fas fa-user-graduate"></i>Alumnus Goldsmiths, University of London, BSc Computer Science (ongoing)</p>
+                    <p><i class="fas fa-briefcase"></i>One Year Freelancing</p>
+                    <p><i class="fas fa-headset"></i>Support Online 24/7</p>
+                </div>
+            </section>
+        </section>
+        <section id="expert" class="pageSection">
+            <section class="intro">
+                <p>Why Choose Me</p>
+                <p>Areas of Expertise</p>
+            </section>
+            <section id="skillsList">
+                <div>
+                    <p class="standOut">Frontend</p>
+                    <div class="skillNamePercent">
+                        <p>HTML5/CSS3</p>
+                        <p>85%</p>
+                        <progress value="85" max="100">85%</progress>
+                    </div>
+                    <div class="skillNamePercent">
+                        <p>JavaScript/ES5/ESNext</p>
+                        <p>90%</p>
+                        <progress value="90" max="100"90%</progress>
+                    </div>
+                    <div class="skillNamePercent">
+                        <p>React</p>
+                        <p>60%</p>
+                        <progress value="60" max="100">60%</progress>
+                    </div>
+                </div>
+                <div>
+                    <p class="standOut">Backend</p>
+                    <div class="skillNamePercent">
+                        <p>PHP</p>
+                        <p>70%</p>
+                        <progress value="70" max="100">70%</progress>
+                    </div>
+                    <div class="skillNamePercent">
+                        <p>SQL</p>
+                        <p>70%</p>
+                        <progress value="70" max="100">70%</progress>
+                    </div>
+                    <div class="skillNamePercent">
+                        <p>Python</p>
+                        <p>75%</p>
+                        <progress value="75" max="100">75%</progress>
+                    </div>
+                </div>
+                <div>
+                    <p class="standOut">CMS</p>
+                    <div class="skillNamePercent">
+                        <p>WordPress - Learning</p>
+                        <p>60%</p>
+                        <progress value="60" max="100">60%</progress>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="offer" class="pageSection">
+            <section class="intro">
+                <p>What I Offer</p>
+                <p>My Services</p>
+            </section>
+            <section id="offerList">
+                <div class="offerCenter">
+                    <p class="standOut">WordPress Development</p>
+                    <p>Need a WordPress site up and running quick; or, perhaps, migrating to WordPress? Let me help!</p>
+                </div>
+                <div class="offerCenter">
+                    <p class="standOut">HTML Email Template Development</p>
+                    <p>Need help designing email templates featuring your company logo, cleanly and simply? Let me help.</p>
+                </div>
+                <div class="offerCenter">
+                    <p class="standOut">Troubleshooting JavaScript</p>
+                    <p>Any JavaScript issue you have is my issue. Let me help.</p>
+                </div>
+                <div class="offerCenter">
+                    <p class="standOut">Do you have a project in mind?</p>
+                    <a href="#contact"><button>Contact Me</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="pageSection">
+            <section class="intro">
+                <p>What I've Done</p>
+                <p>My Portfolio</p>
+            </section>
+            <div id="portfolioSection">
+                <div class="portfolioItem">
+                    <img src="assets/test-image.jpg" height="250" width="250" alt="portfolio item">
+                </div>
+                <div class="portfolioItem">
+                    <img src="assets/test-image.jpg" height="250" width="250" alt="portfolio item">
+                </div>
+                <div class="portfolioItem">
+                    <img src="assets/test-image.jpg" height="250" width="250" alt="portfolio item">
+                </div>
+                <div class="portfolioItem">
+                    <img src="assets/test-image.jpg" height="250" width="250" alt="portfolio item">
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="pageSection">
+            <section class="intro">
+                <p>Contact Me</p>
+            </section>
+            <form action="https://formspree.io/f/xnqororb" method="POST">
+                <label>
+                Email:
+                <input type="text" name="_replyto">
+                </label>
+    
+                <label>
+                Message:
+                <textarea name="message"></textarea>
+                </label>
+
+                 <!-- your other form fields go here -->
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <script src="https://kit.fontawesome.com/3f739adfb6.js" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

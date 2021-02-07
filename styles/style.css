@@ -1,0 +1,189 @@
+* {
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*
+    Smooth scrolling to your desired section.
+    Reset margin and padding.
+    Good looking font.
+*/
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 5px solid rgb(240, 240, 240);
+    padding: 2em;
+    /*total hack...fixed position was taking it out of the normal flow...got this from stackexchange. learn about it later...*/
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.8;
+}
+#hamburgerMenu {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+/*
+    Side navigation styling
+*/
+#sideNav {
+    position: fixed;
+    z-index: 101;
+    overflow-x: hidden;
+    height: 100%;
+    width: 1px;
+    background-color: rgb(169, 112, 255);
+    transition: width 0.5s;
+}
+#sideNav i {
+    cursor: pointer;
+    font-size: 3em;
+    align-self: flex-end;
+    margin-right: 1em;
+}
+#sideNav i:hover {
+    color: white;
+}
+#sideNav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*
+    Side Navigation End
+*/
+/*
+    Section styling.
+*/
+.pageSection {
+    height: 100vh;
+}
+#home {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.division {
+    height: 50%;
+}
+/*
+    Who section 33.3%
+*/
+#who {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+/*
+    Link Section 66.6%
+*/
+#mediaLinks {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#mediaLinks i {
+    font-size: 5em;
+    cursor: pointer;
+}
+/*
+    Resume Section 99.9%
+*/
+#resumeSection {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+/*
+    End Home
+*/
+/*
+    About Section
+*/
+.intro {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#introBullets {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#introBullets i {
+    font-size: 1.4em;
+    padding: 0 10px;
+}
+#introBullets p {
+    font-weight: normal;
+}
+.standOut {
+    color: rgb(89, 230, 54)
+}
+/*
+    Skills Section
+*/
+#skillsList {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.skillNamePercent {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#expert {
+    border: 1px solid salmon;
+}
+
+/*
+    Offer Section
+*/
+.offerCenter {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+/*
+    Portfolio Section
+*/
+#portfolioSection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.portfolioItem {
+    cursor: pointer;
+}
+.portfolioItem:hover {
+    opacity: 0.5;
+}
+/*
+    Contact Section
+*/
+#contact {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+textarea {
+    height: 500px;
+    width: 500px;
+}
